@@ -1,1 +1,2 @@
-This is the backend file
+This is the backend file.
+Download the npm packages as necessary!
