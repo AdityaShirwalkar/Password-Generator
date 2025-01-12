@@ -95,18 +95,8 @@ To modify the application:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Design inspired by modern UI/UX principles
 - Password strength calculations based on entropy
 - Font families: Inter and Roboto Mono
-
-## Contact
-
-Your Name - [your@email.com](mailto:your@email.com)
-
-Project Link: [https://github.com/yourusername/password-generator](https://github.com/yourusername/password-generator)
