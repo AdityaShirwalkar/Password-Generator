@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Password Generator</h1>
+            <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </header>
+
+        <main>
+            <div class="password-display" id="password"></div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="length">Length:</label>
+                    <input type="range" id="length" min="8" max="64" value="16">
+                    <span id="length-value">16</span>
+                </div>
+
+                <div class="options-grid">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="uppercase" checked>
+                        <span>Uppercase (A-Z)</span>
+                    </label>
+
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="lowercase" checked>
+                        <span>Lowercase (a-z)</span>
+                    </label>
+
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="numbers" checked>
+                        <span>Numbers (0-9)</span>
+                    </label>
+
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="symbols" checked>
+                        <span>Symbols (!@#$%^&*)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="strength-meter">
+                <div class="strength-bar-container">
+                    <div id="strength-bar" class="strength-bar"></div>
+                </div>
+                <p id="strength-message" class="strength-message"></p>
+            </div>
+
+            <div class="button-group">
+                <button onclick="generatePassword()">Generate Password</button>
+                <button onclick="copyToClipboard()">Copy Password</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
